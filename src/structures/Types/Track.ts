@@ -5,9 +5,11 @@ import type { Base64 } from "./Utils";
 /** Sourcenames provided by lavalink server */
 export type LavalinkSourceNames = "youtube" | "youtubemusic" | "soundcloud" | "bandcamp" | "twitch";
 /** Source Names provided by lava src plugin */
-export type LavalinkPlugin_LavaSrc_SourceNames = "deezer" |  "spotify" | "applemusic" | "yandexmusic" | "flowery-tts";
+export type LavalinkPlugin_LavaSrc_SourceNames = "deezer" | "spotify" | "applemusic" | "yandexmusic" | "flowery-tts";
+/** Source Names provided by jiosaavan plugin */
+export type LavalinkPlugin_JioSaavn_SourceNames = "jiosaavn";
 /** The SourceNames provided by lavalink */
-export type SourceNames = LavalinkSourceNames | LavalinkPlugin_LavaSrc_SourceNames;
+export type SourceNames = LavalinkSourceNames | LavalinkPlugin_LavaSrc_SourceNames | LavalinkPlugin_JioSaavn_SourceNames;
 
 export interface LavalinkTrackInfo {
     /** The Identifier of the Track */
